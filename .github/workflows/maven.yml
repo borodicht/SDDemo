@@ -20,8 +20,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      USER: ${{secrets.SD_USER}}
-      PASSWORD: ${{secrets.SD_PASSWORD}}
+      USER: ${{secrets.USERNAME}}
+      PASSWORD: ${{secrets.PASSWORD}}
 
     steps:
     - uses: actions/checkout@v4
