@@ -17,7 +17,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
@@ -33,7 +33,7 @@ jobs:
         browser: edge
         version: latest
     - name: Build with Maven
-      run: mvn clean test -DsuiteXmlFile='src/test/resources/CrossBrowser.xml'
+      run: mvn clean test
 
     - name: Load test report history
       uses: actions/checkout@v3
