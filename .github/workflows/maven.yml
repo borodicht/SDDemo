@@ -37,7 +37,7 @@ jobs:
       run: |
        wget https://github.com/allure-framework/allure2/releases/download/2.21.0/allure-2.21.0.tgz
        tar -zxvf allure-2.21.0.tgz
-       sudo mv allure-2.21.0 /usr/local/bin/allure
+       sudo mv allure-2.21.0/bin/allure /usr/local/bin/allure
 
     - name: Build with Maven
       run: mvn clean test -DsuiteXmlFile='src/test/resources/CrossBrowser.xml'
