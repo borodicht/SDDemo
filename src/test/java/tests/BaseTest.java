@@ -26,6 +26,8 @@ public class BaseTest {
     LoginPage loginPage;
     ProductsPage productsPage;
     CartPage cartPage;
+    String user = System.getenv("user");
+    String password = System.getenv("password");
 
     @Parameters({"browser"})
     @BeforeMethod(description = "")
