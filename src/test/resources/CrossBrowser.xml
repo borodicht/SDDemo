@@ -11,11 +11,18 @@
             <parameter name="browser" value="chrome"/>
         </classes>
     </test> <!-- Test -->
-    <test name="Edge">
+    <test name="Firefox">
         <classes>
             <class name="tests.LoginTest"/>
             <class name="tests.CartTest"/>
             <parameter name="browser" value="firefox"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Edge">
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.CartTest"/>
+            <parameter name="browser" value="edge"/>
         </classes>
     </test> <!-- Test -->
 </suite>
