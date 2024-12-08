@@ -15,7 +15,7 @@
         <classes>
             <class name="tests.LoginTest"/>
             <class name="tests.CartTest"/>
-            <parameter name="browser" value="safari"/>
+            <parameter name="browser" value="firefox"/>
         </classes>
     </test> <!-- Test -->
 </suite>
