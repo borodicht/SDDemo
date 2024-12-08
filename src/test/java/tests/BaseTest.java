@@ -48,8 +48,8 @@ public class BaseTest {
             driver = new EdgeDriver(options);
         }
 
-        System.out.println(System.getenv("user"));
-        System.out.println(System.getenv("password"));
+        System.out.println(System.getProperty("user"));
+        System.out.println(System.getProperty("password"));
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        context.setAttribute("driver", driver);
