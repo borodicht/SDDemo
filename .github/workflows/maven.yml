@@ -37,6 +37,6 @@ jobs:
         browser: edge
         version: latest
     - name: Build with Maven
-      run: mvn clean test -Duser=$USER -Dpassword=$PASSWORD
+      run: mvn clean test
 
 

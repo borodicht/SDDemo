@@ -14,6 +14,7 @@ import org.testng.annotations.*;
 import pages.CartPage;
 import pages.LoginPage;
 import pages.ProductsPage;
+import utils.PropertyReader;
 
 import java.time.Duration;
 
@@ -48,8 +49,8 @@ public class BaseTest {
             driver = new EdgeDriver(options);
         }
 
-        System.out.println(System.getProperty("user"));
-        System.out.println(System.getProperty("password"));
+        System.out.println(System.getProperty("user", PropertyReader.getProperty("user")));
+        System.out.println(System.getProperty("password", PropertyReader.getProperty("password")));
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 //        context.setAttribute("driver", driver);
