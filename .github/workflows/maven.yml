@@ -27,5 +27,10 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
+    - name: Setup browser
+      uses: abhi1693/setup-browser@v0.3.4
+      with:
+        browser: edge
+        version: latest
     - name: Build with Maven
       run: mvn clean test -DsuiteXmlFile='src/test/resources/CrossBrowser.xml'
